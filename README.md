@@ -80,6 +80,7 @@ This system is mostly functional and includes features for:
 ---
 
 ## 👤 Author
-**Mahmoud** – Web Applications Course – Birzeit University
 
+**Mahmoud**  
+Web Applications and Technologies – Birzeit University  
 &copy; 2025 Mahmoud – All rights reserved
