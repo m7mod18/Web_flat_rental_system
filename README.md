@@ -50,7 +50,7 @@ This system is mostly functional and includes features for:
 ### 🔹 Owner Pages
 | Home | Add Flat | Appointments |
 |------|----------|--------------|
-| ![](assets/home_Owner.png) | ![](assets/Add_Flat.png) | ![](assets/Owner_Appointments.png) |
+| ![](assets/home_Owner.png) | ![](assets/Add_Flat.png) | ![](assets/Owner_Appoointments.png) |
 
 ### 🔹 Manager Pages
 | Home | Pending Flats | Search Inquiries |
