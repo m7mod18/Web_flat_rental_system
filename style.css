@@ -1,0 +1,2454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+
+header {
+  background-color: #0D1B2A ;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.logo img {
+  height: 50px;
+}
+
+
+.logo h1 .site-title {
+  text-decoration: none;
+  color: white;
+}
+.logo h1 .site-title:hover {
+   text-decoration: underline;
+  color: #119DA4 ;
+}
+.logo-img {
+  height: 50px;
+}
+
+.join-button {
+  font-size: 1.1em;
+  padding: 12px 28px;
+}
+footer img {
+  height: 30px;
+}
+
+.user-photo {
+  height: 30px;
+}
+
+
+.top-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.top-links a:hover {
+  color: #2E2E2E;
+  background-color: #66b3ff;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.layout-container {
+  display: flex;
+  min-height: 85vh;
+}
+
+nav {
+  width: 15%;
+  background-color: #1B263B ;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 12px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #415A77;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #778DA9;
+  color: white;
+}
+
+nav ul li a.active {
+  background-color: #66b3ff;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  flex-grow: 1;
+  
+  background-color: #E0E1DD;
+}
+
+footer {
+  background-color: #0D1B2A;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  color: #aaddff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.user-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-card img {
+  border-radius: 50%;
+  border: 2px solid white;
+  height: 30px;
+}
+
+.featured {
+  background-color: #f5c518;
+  color: black;
+  padding: 10px;
+  border-left: 5px solid #2E2E2E;
+  margin-bottom: 10px;
+}
+
+.status-current {
+  background-color: #e0f7fa;
+  color: #00695c;
+  font-weight: bold;
+}
+
+.status-past {
+  background-color: #ffe6e6;
+  color: #dc143c;
+  font-weight: bold;
+}
+
+input:focus, textarea:focus {
+  background-color: #e6f2ff;
+  outline: none;
+}
+
+label {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #2E2E2E;
+  color: #2E2E2E;
+  margin-bottom: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #2E2E2E;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6f2ff;
+}
+
+/* LINK STYLES */
+a {
+  transition: all 0.3s ease;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+img.clickable:hover {
+  border: 2px solid #66b3ff;
+  cursor: pointer;
+}
+
+
+
+
+.home-hero {
+  background-image: url('images/H1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  color: white;
+   background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-overlay h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hero-overlay .action-button {
+  background-color: #66b3ff;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero-overlay .action-button:hover {
+  background-color: #119DA4;
+  color: white;
+}
+
+.home-content {
+  padding: 40px;
+  background-color: white;
+}
+
+/* Latest Flats Layout for Guest */
+.flat-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.flat-images-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form-error {
+  color: red;
+  background-color: #ffecec;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.flat-images-list img {
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.flat-images-list img:hover {
+  transform: scale(1.05);
+  border-color: #66b3ff;
+  cursor: pointer;
+}
+
+
+.flat-info {
+  margin-top: 10px;
+}
+
+.dashboard-box {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 30px;
+  border-left: 5px solid #415A77;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+.owner-dashboard {
+  background-color: #fff;
+  margin: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.owner-dashboard h3 {
+  color: #1B263B;
+  margin-bottom: 10px;
+}
+
+.owner-dashboard ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.owner-dashboard li {
+  padding: 5px 0;
+  font-size: 1.1em;
+}
+
+.home-video-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.about-site {
+  background-color: rgba(255, 255, 255, 0.75); 
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  backdrop-filter: blur(4px); 
+}
+.about-site .action-button {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0D1B2A;
+  padding: 12px 28px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 2px solid #66b3ff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about-site .action-button:hover {
+  background-color: #66b3ff;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.about-site h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0D1B2A;
+}
+
+.about-site p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-site ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: #444;
+}
+.dashboard-box .action-button,
+.owner-dashboard .action-button {
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #0D1B2A;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-box .action-button:hover,
+.owner-dashboard .action-button:hover {
+  background-color: #119DA4;
+  color: #fff;
+}
+
+.home-video-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  color: white;
+}
+
+.home-video-overlay .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.home-video-overlay .dashboard-box,
+.home-video-overlay .owner-dashboard {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+
+/* ---------------------------------------------- Search.phpstyles -------------------------------------------------------- */
+
+.search-hero-section {
+  background-image: url('images/H1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.search-form {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-form input,
+.search-form select,
+.search-form button {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1em;
+}
+
+.search-main-content {
+  background-color: #E0E1DD;
+  padding: 40px;
+  text-align: center;
+}
+
+.search-title {
+  font-size: 1.8em;
+  color: #1F2A30;
+  margin-bottom: 20px;
+}
+
+.search-table {
+  width: 100%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.search-table th,
+.search-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.search-table th {
+  background-color: #1B263B;
+  color: white;
+  font-weight: bold;
+}
+
+.search-table th a {
+  color: white;
+  text-decoration: none;
+}
+
+.search-sortable-header {
+  cursor: pointer;
+}
+
+.search-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.search-table tr:hover {
+  background-color: #e6f2ff;
+}
+
+.search-table img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.search-table img:hover {
+  transform: scale(1.05);
+}
+
+.search-no-results {
+  color: #666;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+
+.search-form button {
+  background-color: #1F2A30; 
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #66b3ff; 
+  color: #000;
+}
+
+.search-sortable-header a {
+  color: #f5c518; 
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.search-sortable-header a:hover {
+  color: white;
+  background-color: #415A77; 
+  text-decoration: none;
+}
+.search-flat-photo-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-photo-hint {
+  font-size: 0.85em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+
+/* ------------ flat_details.php  سtyles -------------------- */
+.flatdetails-main {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.flatcard-aside {
+  background-color: #fefefe;
+  padding: 20px;
+  border-right: 5px solid #FFC857;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.flatcard-aside h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #1F2A30;
+}
+
+.flatcard-aside ul {
+  padding-left: 20px;
+  list-style: square;
+}
+
+.flatcard-aside li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.flatcard-aside a {
+  color: #1B263B;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.flatcard-aside a:hover {
+  color: #119DA4;
+}
+
+.flatcard-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.flatcard-photos figure {
+  margin: 0;
+}
+
+.flatcard-photos img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.flatcard-photos img:hover {
+  transform: scale(1.04);
+  border-color: #66b3ff;
+}
+
+
+/* ==================== rent_flat.php ==================== */
+.rent-flat-bg {
+  background-image: url("images/back4.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.user-photo {
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rent-flat-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.rent-flat-form h2 {
+  text-align: center;
+  color: #1F2041;
+  margin-bottom: 25px;
+}
+
+.rent-flat-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.rent-flat-form legend {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #4B3F72;
+}
+
+.rent-flat-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rent-flat-form input[type="text"],
+.rent-flat-form input[type="date"],
+.rent-flat-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.rent-flat-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.rent-flat-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 25px;
+  font-size: 1em;
+  background-color: #1F2041;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rent-flat-form button:hover {
+  background-color: #119DA4;
+}
+
+/* ========== Rent Flat Confirmation Page ========== */
+.confirm-bg-wrap {
+  background: url("images/back4.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 60px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.confirm-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 750px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.confirm-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1F2041;
+  font-size: 1.8em;
+}
+
+.summary-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.summary-box p {
+  margin: 10px 0;
+  font-size: 1.05em;
+  color: #333;
+}
+
+.payment-form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.payment-form legend {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #4B3F72;
+  margin-bottom: 10px;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+.payment-form button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 12px 25px;
+  font-size: 1em;
+  background-color: #1F2041;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #119DA4;
+}
+
+
+/* ------------------------------------- Rented Flats Page -------------------------------------------------------- */
+
+
+
+.rented-page {
+  background-image: url("images/back4.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+
+.rented-main {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.rented-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.rented-container h2 {
+  font-size: 1.8em;
+  color: #1F2A30;
+  margin-bottom: 10px;
+}
+
+.rented-subtext {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.rented-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.rented-table th,
+.rented-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.rented-table th {
+  background-color: #1F2A30;
+  color: white;
+}
+
+.rented-flat-link {
+  background-color: #119DA4;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.rented-flat-link:hover {
+  background-color: #0d6a74;
+}
+
+.rented-owner-link {
+  color: #4B3F72;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.rented-owner-link:hover {
+  color: #1F2041;
+}
+
+.rented-current {
+  background-color: #e0f7fa;
+  color: #004d40;
+}
+
+.rented-past {
+  background-color: #fce4e4;
+  color: #b71c1c;
+}
+
+
+.rented-empty {
+  font-size: 1.2em;
+  color: #444;
+  margin-top: 20px;
+}
+.inline-form {
+  display: inline;
+}
+.approve-form-inline {
+  display: inline;
+}
+
+/* ---------------------------------------------- Add fla page  styles -------------------------------------------------------- */
+body.add-flat-body {
+  background-image: url('images/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+
+.add-flat-layout {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+   background-color: transparent !important;
+}
+
+.add-flat-main {
+  flex-grow: 1;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background-color: transparent !important;
+
+
+}
+
+.add-flat-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 35px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.add-flat-form {
+  width: 100%;
+  max-width: 950px;
+  display: grid;
+  gap: 25px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+
+.add-flat-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.add-flat-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1F2A30;
+}
+
+.add-flat-form input,
+.add-flat-form select,
+.add-flat-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  background-color: #f9f9f9;
+  resize: vertical;
+}
+
+.add-flat-checkbox-row {
+  grid-column: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.add-flat-form button[type="submit"] {
+  grid-column: span 2;
+  background-color: #1F2A30;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-flat-form button[type="submit"]:hover {
+  background-color: #005a8c;
+}
+
+.add-flat-form legend {
+  grid-column: span 2;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+
+
+
+/* ---------------------------------------------- Register.php styles -------------------------------------------------------- */
+
+.register-background {
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1F2041;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.register-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register-fieldset {
+  border: 2px solid #1F2A30;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.register-legend {
+  font-weight: bold;
+  color: #1F2A30;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+.register-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.register-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-button {
+  background-color: #1F2A30;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.register-button:hover {
+  background-color: #66b3ff;
+}
+/* ===================== Register customer  Step 2 ===================== */
+.register-step2-bg {
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1F2041;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.register-step2-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 40px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.register-step2-fieldset {
+  border: 2px solid #1F2A30;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.register-step2-legend {
+  font-weight: bold;
+  color: #1F2A30;
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+
+.register-step2-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.register-step2-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-step2-button {
+  background-color: #1F2A30;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.register-step2-button:hover {
+  background-color: #66b3ff;
+}
+
+.register-step2-error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* ====== Register Role Selection Styles ====== */
+.register-select-bg {
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.register-select-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+.register-select-title {
+  font-size: 1.8em;
+  color: #1F2A30;
+  margin-bottom: 30px;
+}
+
+.register-select-btn {
+  display: block;
+  background-color: #1F2A30;
+  color: white;
+  padding: 12px 20px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.register-select-btn:hover {
+  background-color: #66b3ff;
+  color: #000;
+}
+/* ---------- Owner Step 3 ---------- */
+.register-success {
+  color: green;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #e6ffe6;
+  border: 2px solid #66cc66;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------- Appointments Owner  Table---------------------------------------- */
+body.owner-appointments-page {
+  background-color: red !important;
+}
+
+
+.owner-appointments-main {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.owner-appointments-main h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.owner-appointments-table {
+  width: 100%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.owner-appointments-table th {
+  background-color: #1F2A30;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.owner-appointments-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+tr.status-approved td.status-cell {
+  color: green;
+  font-weight: bold;
+}
+tr.status-rejected td.status-cell {
+  color: red;
+  font-weight: bold;
+}
+tr.status-pending td.status-cell {
+  color: #e69500;
+  font-weight: bold;
+}
+
+.owner-appointments-table .action-form button {
+  background-color: #1F2A30;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.owner-appointments-table .action-form button:hover {
+  background-color: #005a8c;
+}
+
+
+.form-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+    .appointments-table th,
+    .appointments-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+   
+  
+    .action-form {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+   
+   
+
+/*------------------------  Log in page--------------------------- */
+
+/* ================== Login Page ================== */
+
+main.login-bg {
+  background: url("images/back3.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1F2041;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 25px;
+  margin: 40px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1F2A30;
+  font-size: 1.8em;
+}
+
+.login-error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.login-fieldset {
+  border: 2px solid #1F2A30;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.login-legend {
+  font-weight: bold;
+  color: #1F2A30;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.login-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  background-color: #1F2A30;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #66b3ff;
+  color: black;
+}
+
+/* oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo*/
+/* ===== Add Flat Page Styles ===== */
+
+.add-flat-page {
+  background-color: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.form-hero-banner {
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+.form-hero-banner .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+
+.add-flat-main {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin: 40px;
+  border-radius: 10px;
+}
+
+.flat-form fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.flat-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.flat-form input, .flat-form select, .flat-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-top: 4px;
+}
+
+.flat-form .checkbox-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.flat-form button {
+  background-color: #119DA4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flat-form button:hover {
+  background-color: #0d6a74;
+}
+
+.form-success {
+  color: green;
+  font-weight: bold;
+  background-color: #e0ffe0;
+  padding: 10px;
+  border-left: 5px solid green;
+  margin-bottom: 20px;
+}
+/* ===== Customer Appointment Page ===== */
+body.customer-appointments-page {
+  background-image: url('images/back4.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+body.customer-appointments-page::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  background-color: rgba(255, 255, 255, 0.6); 
+  z-index: -1;
+}
+
+.customer-appointments-main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.customer-appointments-main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1F2A30;
+  font-size: 26px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.customer-appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-appointments-table th,
+.customer-appointments-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+}
+
+.customer-appointments-table th {
+  background-color: #1B263B;
+  color: white;
+}
+
+.appointment-booked-row {
+  background-color: #ffe5e5;
+}
+
+.appointment-book-btn {
+  background-color: #119DA4;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.appointment-book-btn:hover {
+  background-color: #0d6a74;
+}
+
+.appointment-disabled-btn {
+  background-color: #ccc;
+  color: #666;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+}
+
+.form-success, .form-error {
+  text-align: center;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+  
+/* ==== Owner Approve Rentals Page ==== */
+body.owner-approve-rentals-page {
+  margin: 0;
+  background-image: url('images/back4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.approve-main {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.approve-main h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.approve-table {
+  width: 100%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.approve-table th {
+  background-color: #1F2A30;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.approve-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+.approve-table button {
+  background-color: #1F2A30;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.approve-table button:hover {
+  background-color: #005a8c;
+}
+
+.form-success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.approve-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 6px;
+}
+
+.approve-btn:hover {
+  background-color: #218838;
+}
+
+.reject-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.reject-btn:hover {
+  background-color: #c82333;
+}
+
+
+.flat-photo-thumb {
+  height: 60px;
+  margin: 2px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+ /* -------------------------------- Manager pending flats------------------------------------  */ 
+
+.manager-inquiry-page {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/back4.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.manager-inquiry-hero {
+  display: none; 
+}
+
+.manager-inquiry-main {
+  background-color: rgba(255, 255, 255, 0.95); 
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+}
+
+.manager-inquiry-main h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1d3557;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.manager-inquiry-form fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.manager-inquiry-form label {
+  flex: 1 1 230px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.manager-inquiry-form input,
+.manager-inquiry-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 6px;
+  background-color: #f9f9f9;
+}
+
+.manager-inquiry-form button {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.manager-inquiry-form button:hover {
+  background-color: #16324f;
+}
+
+.inquiry-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.inquiry-results-table th,
+.inquiry-results-table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.inquiry-results-table th {
+  background-color: #e8edf3;
+  font-weight: 600;
+  font-size: 15px;
+  color: #1d3557;
+}
+
+.inquiry-results-table tr:nth-child(even) {
+  background-color: #f5f8fa;
+}
+
+.ref-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #1d3557;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ref-link:hover {
+  background-color: #0f2b45;
+}
+
+.user-link {
+  color: #1d3557;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.user-link:hover {
+  color: #0f2b45;
+  text-decoration: none;
+}
+
+
+  
+/*confirm rent flat  */
+.confirm-main {
+  padding: 30px;
+  background-color: #f3f3f3;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.confirm-main h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.summary-box {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+form fieldset legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="month"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-error {
+  background-color: #ffd2d2;
+  color: #a40000;
+  border-left: 5px solid #a40000;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-success {
+  background-color: #e0ffe0;
+  color: #2b6e2b;
+  border-left: 5px solid green;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/*  -------------------------- Owner Card Page.php -------------------------------*/
+.owner-card-page {
+  font-family: Arial, sans-serif;
+  background-color: #f3f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-card-main {
+  padding: 40px;
+  flex: 1;
+}
+
+.owner-card-main h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.owner-card-box {
+  background-color: #fff;
+  border-left: 5px solid #3498db;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.owner-card-box p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.owner-card-box h3 {
+  margin-top: 25px;
+  color: #34495e;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+
+
+/* -----------------------------------------------Profile Page ----------------------------------------------- */
+.profile-edit-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-view-card {
+  background-color: #f5fff5;
+  border: 2px solid #004080;
+  color: #003300;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-view-image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #004080;
+  margin-bottom: 15px;
+}
+
+.profile-edit-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: #004080;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.profile-edit-link:hover {
+  background-color: #0073e6;
+}
+.profile-edit-form {
+  background-color: #f5fff5;
+  border: 2px solid #004080;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-edit-form input,
+.profile-edit-form label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+.profile-edit-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.profile-edit-form input[readonly] {
+  background-color: #eee;
+  color: #888;
+}
+
+.profile-edit-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #004080;
+  margin-bottom: 15px;
+}
+.save-profile-btn {
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.save-profile-btn:hover {
+  background-color: #0073e6;
+}
+/*  ------------------------------------------ cart page -------------------------------------------- */ 
+.cart-main {
+  background-image: url('images/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.cart-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.basket-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.basket-table th,
+.basket-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #241e5b;
+}
+
+.basket-image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.flat-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-proceed,
+.btn-remove {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-proceed {
+  background-color: #1F2A30;
+  color: white;
+}
+
+.btn-proceed:hover {
+  background-color: #005a8c;
+}
+
+.btn-remove {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.btn-remove:hover {
+  background-color: #cc0000;
+}
+.basket-table thead th {
+  background-color: #1F2A30; 
+  color: #fff;              
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+/* Massege Page------------------------------------------- */ 
+body.messages-page {
+  background-color: #f2f2f2;
+}
+
+.messages-layout {
+  display: flex;
+  min-height: 85vh;
+  margin: 0;
+  padding: 0;
+}
+
+.messages-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.message-card {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.message-card h3 {
+  margin-bottom: 6px;
+  color: #1F2A30;
+}
+
+.message-card p {
+  margin: 6px 0;
+  color: #333;
+}
+
+.message-form-container {
+  margin-top: 30px;
+}
+
+.message-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.message-form input,
+.message-form textarea,
+.message-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.message-form button {
+  margin-top: 15px;
+  background-color: #1F2A30;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.message-form button:hover {
+  background-color: #66b3ff;
+}
+.message-body {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 1.05em;
+  color: #333;
+}
+
+
+
+.messages-layout {
+  display: flex;
+  min-height: 80vh;
+}
+
+.messages-sidebar {
+  width: 200px;
+  background-color: #1F2A30;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #2e3b44;
+  transition: background-color 0.3s;
+}
+
+.messages-sidebar a:hover,
+.messages-sidebar .active-tab {
+  background-color: #66b3ff;
+  color: #000;
+}
+
+.messages-main {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+
+.message-card {
+  background: white;
+  border-left: 5px solid #1F2A30;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+
+.message-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.message-form input,
+.message-form select,
+.message-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.message-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #1F2A30;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message-form button:hover {
+  background-color: #66b3ff;
+}
+/*Contact us  */
+/* Contact Page Styling */
+body.contact-page {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.contact-main {
+  padding: 30px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.contact-main h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact-main p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 15px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  border: 1px solid #0077cc;
+  padding: 6px 10px;
+  background-color: #eef6ff;
+  color: #004080;
+  border-radius: 4px;
+}
+
+.contact-form .required {
+  color: red;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #f0f8ff;
+  border-color: #0077cc;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #004080;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #0066cc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+}
